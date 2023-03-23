@@ -38,15 +38,15 @@ while True:
 
     # prompting the user if they want to continue playing the game or end
     while True:
-        end_input = input("Would you like to play again? (y/n): ")
-        if end_input == "n":
+        end_input = input("Would you like to play again? (yes/no): ").lower()
+        if end_input == "no":
             print("Thank you for playing.")
             break
-        elif end_input == "y":
+        elif end_input == "yes":
             break
-        elif end_input != "y" or "n":
-            print("Please press either \"y\" for yes or \"n\" for no.")
+        elif end_input != "yes" or "no":
+            print("Please press either \"yes\" for yes or \"no\" for no.")
 
     # to break the while loop
-    if end_input == "n":
+    if end_input == "no":
         break
